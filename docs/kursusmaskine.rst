@@ -31,7 +31,7 @@ Unix-brugere på maskinen:
 Konfigurationen for ``public_html`` for oven, har indeksering slået til. Det
 vil sige at hvis den givne sti referer til en mappe, da vises mappens indhold.
 Det er nogen gange et uønsket funktionalitet, f.eks. hvis man ønsker at dele
-skjulte filer.
+filer i ly.
 
 En konvention man kan tage i brug er at eksponere mappen ``~/hidden_html/``, i
 stil med ``~/public_html/`` for oven, bag et URL som
