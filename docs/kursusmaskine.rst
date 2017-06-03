@@ -50,9 +50,9 @@ maskinen:
     alias /home/$1/hidden_html/$2;
   }
 
-Som et ekstra lag af obfuskering og samtidigt, troværdighed, kan man omnavngive
-filen til dens SHA256-sum. F.eks. finder man selvsamme ``secret.txt`` ved at se
-på
+Som et ekstra lag af obfuskering, men samtidigt, troværdighed, kan man
+omnavngive filen til dens SHA256-sum. F.eks. finder man selvsamme
+``secret.txt`` ved at se på
 `onlineta.org/@oleks/12058bdda0a2ca9520985ec128b85c297d099459d7c3b15db911323b1f1d459e
 <https://onlineta.org/@oleks/12058bdda0a2ca9520985ec128b85c297d099459d7c3b15db911323b1f1d459e>`_.
 Selvom URL'en er lang, giver man brugeren både en fil on en checksum på en
