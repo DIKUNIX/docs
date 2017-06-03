@@ -47,8 +47,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'DIKUNIX'
-copyright = '2017, Olek Shturmov'
-author = 'Olek Shturmov'
+copyright = '2017, Oleks Shturmov'
+author = 'Oleks Shturmov'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -128,7 +128,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'DIKUNIX.tex', 'DIKUNIX Documentation',
-     'Olek Shturmov', 'manual'),
+     'Oleks Shturmov', 'manual'),
 ]
 
 
