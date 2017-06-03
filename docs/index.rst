@@ -10,6 +10,7 @@ Welcome to DIKUNIX's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   kursusmaskine.rst
 
 
 Indices and tables
