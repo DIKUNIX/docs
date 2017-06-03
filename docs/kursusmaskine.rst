@@ -51,8 +51,15 @@ Unix-brugere på maskinen:
   }
 
 Som et ekstra lag af obfuskering, men samtidigt, troværdighed, kan man
-omnavngive filen til dens SHA256-sum. F.eks. finder man selvsamme
-``secret.txt`` ved at se på
+omnavngive filen til dens SHA256-sum. Altså:
+
+.. code-block:: shell
+
+  $ sha256sum <file>
+  <sha256sum>  <file>
+  $ mv <file> <sha256sum>
+
+F.eks. finder man selvsamme ``secret.txt`` ved at se på
 `onlineta.org/@oleks/12058bdda0a2ca9520985ec128b85c297d099459d7c3b15db911323b1f1d459e
 <https://onlineta.org/@oleks/12058bdda0a2ca9520985ec128b85c297d099459d7c3b15db911323b1f1d459e>`_.
 Selvom URL'en er lang, giver man brugeren både en fil on en checksum på en
