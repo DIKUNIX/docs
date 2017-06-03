@@ -15,8 +15,8 @@ F.eks. `onlineta.org/~oleks/ <https://onlineta.org/~oleks/>`_.
 Konventionen er at det er mappen ``~/public_html/`` (relativt til den hhv.
 Unix-bruger) der bliver således eksponeret, hvis mappen findes.
 
-Følgende Nginx-konfiguration ruller denne funktionalitet ud til Unix-brugere på
-maskinen:
+Følgende Nginx-konfiguration ruller denne funktionalitet ud til alle
+Unix-brugere på maskinen:
 
 .. code-block:: nginx
 
@@ -41,8 +41,8 @@ F.eks. giver `onlineta.org/@oleks/ <https://onlineta.org/@oleks/>`_ et 403,
 mens der faktisk ligger en "hemmelig" fil her: `onlineta.org/@oleks/secret.txt
 <https://onlineta.org/@oleks/secret.txt>`_.
 
-Følgende Nginx-konfiguration ruller denne funktionalitet ud til Unix-brugere på
-maskinen:
+Følgende Nginx-konfiguration ruller denne funktionalitet ud til alle
+Unix-brugere på maskinen:
 
 .. code-block:: nginx
 
