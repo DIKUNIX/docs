@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+import subprocess
+import sys
+
+
+def try_make() -> None:
+    retval = subprocess.call(["make", "-C", "docs", "html"])
+    sys.exit(retval)
+
+
+def main() -> None:
+    lines = subprocess.check_output(
+        ['git', 'status', '.', '--porcelain'])
+    if len(str(lines).split('\n')) == 1:
+        try_make()
+    print("#####################################################")
+    print("# Nice! You have changes. Now commit or stash them. #")
+    print("#####################################################")
+    subprocess.call(['git', 'status', '.'])
+    sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
