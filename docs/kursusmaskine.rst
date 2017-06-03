@@ -13,7 +13,7 @@ mappe under deres hjemmemappe bag et URL som ``<hostname>/~<username>/``.
 F.eks. `onlineta.org/~oleks/ <https://onlineta.org/~oleks/>`_.
 
 Konventionen er at det er mappen ``~/public_html/`` (relativt til den hhv.
-Unix-bruger) der blicer således eksponeret, hvis sådan en findes.
+Unix-bruger) der bliver således eksponeret, hvis mappen findes.
 
 Følgende Nginx-konfiguration ruller denne funktionalitet ud til Unix-brugere på
 maskinen:
