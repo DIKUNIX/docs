@@ -37,6 +37,10 @@ En konvention man kan tage i brug er at eksponere mappen ``~/hidden_html/``, i
 stil med ``~/public_html/`` for oven, bag et URL som
 ``<hostname>/@<username/``, og så lade være med at slå indeksering til.
 
+F.eks. giver `onlineta.org/@oleks/ <https://onlineta.org/@oleks/>`_ et 403,
+mens der faktisk ligger en "hemmelig" fil her: `onlineta.org/@oleks/secret.txt
+<https://onlineta.org/@oleks/secret.txt>`_.
+
 Følgende Nginx-konfiguration ruller denne funktionalitet ud til Unix-brugere på
 maskinen:
 
@@ -45,3 +49,11 @@ maskinen:
   location ~ "^/@(.*?)(/.*?)?$" {
     alias /home/$1/hidden_html/$2;
   }
+
+Som et ekstra lag af obfuskering og samtidigt, troværdighed, kan man omnavngive
+filen til dens SHA256-sum. F.eks. finder man selvsamme ``secret.txt`` ved at se
+på
+`onlineta.org/@oleks/12058bdda0a2ca9520985ec128b85c297d099459d7c3b15db911323b1f1d459e
+<https://onlineta.org/@oleks/12058bdda0a2ca9520985ec128b85c297d099459d7c3b15db911323b1f1d459e>`_.
+Selvom URL'en er lang, giver man brugeren både en fil on en checksum på en
+gang.
