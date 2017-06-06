@@ -20,8 +20,11 @@ Den er nem nok at installere på en Debian::
     apt-get install mosh
 
 Men bruger man et firewall (som man jo bør), skal man lige åbne op for de
-relevante UDP-porte.
+relevante UDP-porte. Mosh vil starte med at optage port 60000 og 60001, og
+ellers inkrementere port-nummeret efter flere samtidige forbindelser. Det
+betyder at foventer man ikke mere end 9 forbindelser via Mosh ad gangen, kan
+man nøjes med at åbne op for portene 60000 til 60010.
 
 F.eks., hvis man bruger ufw::
 
-    ufw allow 60000:61000/udp
+    ufw allow 60000:60010/udp
