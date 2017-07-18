@@ -2,7 +2,7 @@
 Tjeksum
 =======
 
-En tjeksum er en næsten unik alfanumerisk kode, genereret på baggrund af den
+En tjeksum er en (næsten) unik alfanumerisk kode, genereret på baggrund af den
 bit-vise indhold af en fil.
 
 Det kan være en god idé at tjekke tjeksummen af en fil man henter over en
