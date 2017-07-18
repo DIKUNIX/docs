@@ -8,8 +8,8 @@ bit-vise indhold af en fil.
 Det kan være en god idé at tjekke tjeksummen af en fil man har hentet over en
 usikret forbindelse (f.eks. http frem for https), eller fra en ellers
 upålidelig internetkilde. Således kan man være mere sikker på at hvad man har
-hentet, faktisk er den ønskede fil. (Antaget, naturligvis, at man har en sikker
-måde at få fat i den forventede tjeksum på.)
+hentet, faktisk er den ønskede fil. (Antaget, at man ellers har en sikker måde
+at få fat i den forventede tjeksum på.)
 
 Der findes en række forskellige tjeksum-algoritmer, hvor nok den mest populær
 nutildags er SHA256.
