@@ -5,20 +5,24 @@ Tjeksum
 En tjeksum er en (næsten) unik alfanumerisk kode, genereret på baggrund af den
 bit-vise indhold af en fil.
 
-Det kan være en god idé at tjekke tjeksummen af en fil man henter over en
+Det kan være en god idé at tjekke tjeksummen af en fil man har hentet over en
 usikret forbindelse (f.eks. http frem for https), eller fra en ellers
-upålidelig internettjenneste. Således kan du være mere sikker på at hvad du har
-hentet faktisk er den fil du ønskede at hente.
+upålidelig internetkilde. Således kan man være mere sikker på at hvad man har
+hentet, faktisk er den ønskede fil. (Antaget, naturligvis, en sikker måde at få
+fat i den forventede tjeksum.)
 
-På en Linux- eller OS X-maskine kan bruge kommando-linjeværktøjet ``sha256sum``:
+Der findes en række forskellige tjeksum-algoritmer, hvor nok den mest populær
+nutildags er SHA256.
+
+På en Linux- eller OS X-maskine kan bruge kommandolinjeværktøjet ``sha256sum``
+til at beregne SHA26-summen af en fil ved stien ``<fil-sti>``:
 
 .. code-block:: shell
 
   $ sha25sum <fil-sti>
 
-Hvor ``<fil-sti>`` er stien til filen som du ønsker SHA256 summen på.
-
-På en Windows-maskine, kan bruge kommando-linjeværktøjet ``certUtil``:
+På en Windows-maskine, kan man til gengæld bruge kommandolinjeværktøjet
+``certUtil``:
 
 .. code-block:: bat
 
