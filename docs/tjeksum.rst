@@ -15,7 +15,7 @@ Der findes en række forskellige tjeksum-algoritmer, hvor nok den mest populær
 nutildags er SHA256.
 
 På en Linux- eller OS X-maskine kan bruge kommandolinjeværktøjet ``sha256sum``
-til at beregne SHA26-summen af en fil ved stien ``<fil-sti>``:
+til at beregne SHA256-summen af en fil ved stien ``<fil-sti>``:
 
 .. code-block:: shell
 
