@@ -19,7 +19,7 @@ til at beregne SHA256-summen af en fil ved stien ``<fil-sti>``:
 
 .. code-block:: shell
 
-  $ sha25sum <fil-sti>
+  $ sha256sum <fil-sti>
 
 På en Windows-maskine, kan man til gengæld bruge kommandolinjeværktøjet
 ``certUtil``:
