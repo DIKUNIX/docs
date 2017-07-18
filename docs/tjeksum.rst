@@ -1,6 +1,6 @@
-=======
-Tjeksum
-=======
+================
+Tjeksum (SHA256)
+================
 
 En tjeksum er en (næsten) unik alfanumerisk kode, genereret på baggrund af den
 bit-vise indhold af en fil.
