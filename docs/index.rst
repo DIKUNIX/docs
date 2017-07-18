@@ -13,6 +13,7 @@ Welcome to DIKUNIX's documentation!
    maskine.rst
    kursusmaskine.rst
    gitlab.rst
+   tjeksum.rst
 
 Indices and tables
 ==================
