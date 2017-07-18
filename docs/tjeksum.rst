@@ -14,10 +14,12 @@ På en Linux- eller OS X-maskine kan bruge kommando-linjeværktøjet ``sha256sum
 
 .. code-block:: shell
 
-  $ sha25sum <file>.ova
+  $ sha25sum <fil-sti>
+
+Hvor ``<fil-sti>`` er stien til filen som du ønsker SHA256 summen på.
 
 På en Windows-maskine, kan bruge kommando-linjeværktøjet ``certUtil``:
 
 .. code-block:: bat
 
-  > certUtil -hashfile <file>.ova SHA256
+  > certUtil -hashfile <fil-sti> SHA256
