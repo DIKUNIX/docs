@@ -10,6 +10,7 @@ Welcome to DIKUNIX's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   dikunix.dk.rst
    maskine.rst
    kursusmaskine.rst
    gitlab.rst
