@@ -64,3 +64,29 @@ F.eks. finder man selvsamme ``secret.txt`` ved at se på
 <https://onlineta.org/@oleks/12058bdda0a2ca9520985ec128b85c297d099459d7c3b15db911323b1f1d459e>`_.
 Selvom URL'en er lang, giver man brugeren både en fil on en checksum på en
 gang.
+
+Upload Script
+=============
+
+Man kan med fordel bruge følgende script til at lægge noget op på en måskine
+med sådan en ``hidden_html`` mappe:
+
+.. code-block:: shell
+
+    #!/usr/bin/env bash
+
+    set -euo pipefail
+
+    server=#### UDFYLD MIG ###
+    user=#### UDFYLD MIG ####
+    path=$1
+
+    ext="${path##*.}"
+
+    filename="$(sha256sum "${path}" | cut -d' ' -f1).${ext}"
+    remote_path="/home/${user}/hidden_html/${filename}"
+
+    scp "$path" ${user}@${server}:${remote_path}
+    ssh ${user}@${server} chmod 644 ${remote_path}
+
+    echo "https://${server}/@${user}/${filename}"
