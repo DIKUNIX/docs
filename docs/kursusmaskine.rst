@@ -87,6 +87,15 @@ med sådan en ``hidden_html`` mappe:
     remote_path="/home/${user}/hidden_html/${filename}"
 
     scp "$path" ${user}@${server}:${remote_path}
-    ssh ${user}@${server} chmod 644 ${remote_path}
+    ssh ${user}@${server} \
+      "chgrp www-data ${remote_path} && chmod 640 ${remote_path}"
 
     echo "https://${server}/@${user}/${filename}"
+
+Bemærk, at du vil skulle indtaste din adgangskode *to* gange: først for at
+kopiere filen med ``scp``, og dernæst for at logge ind på maskinen med ``ssh``
+for at rette op på rettighederne til filen. Bemærk også, at filen hermed ejes
+af dig, men er synlig for gruppen ``www-data``, som formentlig er alle de
+menneskelige brugere på serveren.
+
+Hvis alt gik vel, afslutter scripttet ved at skrive et URL til filen.
