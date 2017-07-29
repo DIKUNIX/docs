@@ -1,6 +1,6 @@
-==========
-dikunix.dk
-==========
+==============
+``dikunix.dk``
+==============
 
 ``dikunix.dk`` kører på en VPS fra transip_, og har OpenBSD_ som styresystem.
 
