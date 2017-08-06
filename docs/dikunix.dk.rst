@@ -13,4 +13,4 @@ Spindelnisse
 
 ``dikunix.dk`` bruger httpd_ som spindelnisse.
 
-.. _httpd: https://httpd.apache.org/docs/current/programs/httpd.html
+.. _httpd: https://man.openbsd.org/httpd
