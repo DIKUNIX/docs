@@ -1,3 +1,5 @@
+# vim: spell spelllang=da
+
 ==============
 ``dikunix.dk``
 ==============
