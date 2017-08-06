@@ -7,10 +7,10 @@
 .. _transip: https://www.transip.eu
 .. _OpenBSD: https://www.openbsd.org
 
--------------
-Spindeltjener
--------------
+------------
+Spindelnisse
+------------
 
-``dikunix.dk`` bruger httpd_ som spindeltjener.
+``dikunix.dk`` bruger httpd_ som spindelnisse.
 
 .. _httpd: https://httpd.apache.org/docs/current/programs/httpd.html
