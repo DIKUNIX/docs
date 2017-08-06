@@ -26,6 +26,8 @@ følgende:
 
   $ /etc/rc.d/httpd restart
 
+Hvis det går galt, kan du tjekke halen af ``/var/log/daemon``.
+
 .. |httpd| replace:: ``httpd(8)``
 .. _httpd: https://man.openbsd.org/httpd
 
